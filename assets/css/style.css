@@ -721,6 +721,61 @@ ul, ol {
 
 
 
+/* Footer */
+.footer {
+    margin-top: 60px;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #F9F9F9;
+    background-repeat: no-repeat;
+    background-image: 
+        url("../images/tire-left.svg"), 
+        url("../images/tire-right.svg");
+    background-position: 
+        left -50px bottom -20px, 
+        right -50px bottom -20px;
+
+}
+
+.footer__contacts {
+    margin: 25px 0;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #585858;
+}
+
+.footer__contacts p {
+    margin: 0 0 5px;
+}
+
+.footer__contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__contacts a:hover {
+    text-decoration: underline;
+}
+
+.footer__nav {
+    font-style: 12px;
+
+}
+
+.footer__nav a {
+    margin: 0 5px;
+    color: #004AF2;
+    text-decoration: none;
+}
+
+.footer__nav a:hover {
+    text-decoration: underline;
+}
+
+
+
 /*
 font-family: 'Lato', sans-serif;
 font-family: 'PT Sans', sans-serif;
