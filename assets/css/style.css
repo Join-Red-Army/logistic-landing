@@ -4,7 +4,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-size: 15px;
     color: #585858;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 /*
@@ -43,6 +43,7 @@ ul, ol {
 }
 
 
+
 /* Header */
 .header {
     width: 100%;
@@ -63,6 +64,7 @@ ul, ol {
 }
 
 
+
 /* Nav */
 .nav {
     display: flex;
@@ -80,6 +82,7 @@ ul, ol {
 .nav__link.active {
     background-color: #004AF2;
 }
+
 
 
 /* Intro */
@@ -127,6 +130,8 @@ ul, ol {
     transform: translateY(-50%);
 }
 
+
+
 /* Request-form */
 .request-form {
     width: 100%;
@@ -151,7 +156,6 @@ ul, ol {
 .request-form__text {
     font-size: 15px;
     color: #fff;
-    line-height: 1.4;
 }
 
 .request-form__content {
@@ -162,6 +166,7 @@ ul, ol {
     position: relative;
     bottom: -30px;
 }
+
 
 
 /* Form */
@@ -189,7 +194,7 @@ ul, ol {
 
 .input:focus {
     outline: none;
-    border-bottom: 1px solid #fff;
+    border-bottom-color: #fff;
 }
 
 .input--user {
@@ -201,8 +206,9 @@ ul, ol {
 }
 
 .input--email {
-    background: url("../images/mail-icon.svg") left 15px top 5px no-repeat;
+    background: url("../images/mail-icon.svg") left 15px top 6px no-repeat;
 }
+
 
 
 /* BTN */
@@ -233,6 +239,7 @@ ul, ol {
 }
 
 
+
 /* Section */
 .section {
     padding: 60px 0;
@@ -240,6 +247,10 @@ ul, ol {
 
 .section--map {
     background: url("../images/map.svg") no-repeat left 30px top 130px;
+}
+
+.section--gray {
+    background-color: #F9F9F9;        
 }
 
 .section__title {
@@ -256,9 +267,10 @@ ul, ol {
 }
 
 
+
 /* Services */
 .services {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     padding: 30px 0 50px;
     position: relative;
@@ -286,6 +298,8 @@ ul, ol {
     width: 25%;
     padding: 0 25px;
     margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
 }
 
 .services__title {
@@ -300,7 +314,6 @@ ul, ol {
 .services__text {
     margin-bottom: 20px;
     font-size: 15px;
-    line-height: 1.4;
     color: #585858;
 }
 
@@ -337,6 +350,7 @@ ul, ol {
 }
 
 
+
 /* Clients */
 .clients {
     display: flex;
@@ -371,6 +385,7 @@ ul, ol {
     color: #464646;
     background: url("../images/heart.svg") no-repeat left 29px top 0;
 }
+
 
 
 /* Reviews */
@@ -439,6 +454,7 @@ ul, ol {
 }
 
 
+
 /* Benefits */
 .benefits {
     display: flex;
@@ -500,5 +516,66 @@ ul, ol {
     font-size: 15px;
     color: #585858;
     font-weight: 400;
-    line-height: 1.4;
 }
+
+
+
+/* Team */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__col {
+    width: 33.33333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    width: 100%;
+    margin-bottom: 13px;
+    box-shadow: 10px 5px 13px rgba(0, 0, 0, .16);
+}
+
+.team__name {
+    margin-bottom: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #2C2C2C;
+}
+
+.team__prof {
+    margin-bottom: 11px;
+    font-size: 15px;
+    color: #585858;
+}
+
+.team__contacts {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #585858;
+}
+
+.team__contacts li {
+    margin-bottom: 9px;
+}
+
+.team__contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team__contacts a:hover {
+    text-decoration: underline;
+}
+
+.team__contacts-icon {
+    width: 16px;
+    height: auto;
+    margin-right: 7px;
+}
+
