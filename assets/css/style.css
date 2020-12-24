@@ -811,7 +811,8 @@ ul, ol {
 
 /* Modals */
 .modal {
-    display: flex;
+    display: none;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -824,6 +825,10 @@ ul, ol {
     z-index: 2000;
 }
 
+.modal.show {
+    display: flex;
+}
+
 .modal__inner {
     padding: 25px;
     width: 400px;
@@ -834,6 +839,10 @@ ul, ol {
 .modal__header {
     margin-bottom: 25px;
     text-align: center;
+}
+
+.modal__icon {
+    margin-bottom: 10px;
 }
 
 .modal__title {
@@ -908,6 +917,7 @@ ul, ol {
 .modal__close:hover {
     transform: rotateZ(90deg);
 }
+
 
 /*
 font-family: 'Lato', sans-serif;
