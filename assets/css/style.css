@@ -72,7 +72,7 @@ ul, ol {
 }
 
 .header--dark {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .header__inner {
@@ -106,7 +106,12 @@ ul, ol {
     background-color: #004AF2;
 }
 
-
+.burger {
+    padding: 0;
+    background: none;
+    border: none;
+    display: none;
+}
 
 
 /* Intro */
@@ -1056,6 +1061,42 @@ ul, ol {
 
 .text a:hover {
     text-decoration: underline;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 767px) {
+
+    .header__inner {
+        height: 50px;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        height: auto;
+        min-height: calc(100vh - 50px);
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .85);
+        padding-top: 9px;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .nav__link {
+        display: block;
+        padding: 10px 15px;
+        text-align: right;
+    }
+
+    .burger {
+        display: block;
+    }
 }
 
 /*
