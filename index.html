@@ -415,49 +415,52 @@
     <!-- Modals -->
     <div class="modal" id="becomeClientModal" style="display: none;">
         <div class="modal__inner">
-            
-            <div class="modal__header">
-                <h2 class="modal__title">
-                    Need to deliver your cargo?<br>
-                    We can help!
-                </h2>
-                <p class="modal__text">
-                    Fill a little form and we will call you back!
-                </p>
+
+            <div class="modal__content">
+                
+                <div class="modal__header">
+                    <h2 class="modal__title">
+                        Need to deliver your cargo?<br>
+                        We can help!
+                    </h2>
+                    <p class="modal__text">
+                        Fill a little form and we will call you back!
+                    </p>
+                </div>
+                
+                <form class="" action="/" method="post">
+                    <div class="form__group">
+                        <input class="input input--dark input--user" type="text" placeholder="Your name">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark input--phone" type="tel" placeholder="Your phone">
+                    </div>
+                    <div class="form__group">
+                        <input class="input input--dark input--email" type="email" placeholder="Your e-mail">
+                    </div>
+
+                    <button class="btn btn--block btn--orange" type="submit"><span>Call me back</span></button>
+
+                </form>
+
+                <div class="modal__footer"></div>
+                    <h4 class="modal__footer-title">Our contacts</h4>
+
+                    <address class="modal__contacts">
+                        <p>New York, Street, ZIP code</p>
+                        <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
+                        <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
+                    </address>
+                </div>
+
+                <button class="modal__close"><img src="./assets/images/close.svg" alt="Close"></button>
             </div>
-            
-            <form class="" action="/" method="post">
-                <div class="form__group">
-                    <input class="input input--dark input--user" type="text" placeholder="Your name">
-                </div>
-                <div class="form__group">
-                    <input class="input input--dark input--phone" type="tel" placeholder="Your phone">
-                </div>
-                <div class="form__group">
-                    <input class="input input--dark input--email" type="email" placeholder="Your e-mail">
-                </div>
-
-                <button class="btn btn--block btn--orange" type="submit"><span>Call me back</span></button>
-
-            </form>
-
-            <div class="modal__footer"></div>
-                <h4 class="modal__footer-title">Our contacts</h4>
-
-                <address class="modal__contacts">
-                    <p>New York, Street, ZIP code</p>
-                    <p>Phone: <a href="tel:+9948373123">+9948373123</a></p>
-                    <p>E-mail: <a href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a></p>
-                </address>
-            </div>
-
-            <button class="modal__close"><img src="./assets/images/close.svg" alt="Close"></button>
         </div>
     </div>
 
 
     <!-- Thanks modal -->
-    <div class="modal" id="thanksModal">
+    <div class="modal" id="thanksModal" style="display: none;">
         <div class="modal__inner">
             
             <div class="modal__header">
