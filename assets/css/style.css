@@ -762,12 +762,18 @@ ul, ol {
 
 .articles--column {
     flex-direction: column;
+    margin-bottom: 75px;
 }
 
 .articles--column
 .articles__item {
     max-width: none;
     margin-bottom: 45px;
+}
+
+.articles--column
+.articles__item:last-child {
+    margin-bottom: 0;
 }
 
 .articles__item {
@@ -859,7 +865,6 @@ ul, ol {
 .footer__nav a:hover {
     text-decoration: underline;
 }
-
 
 
 
@@ -1070,7 +1075,6 @@ ul, ol {
 }
 
 
-
 /* Media Queries */
 @media (max-width: 991px) {
     /* Intro */
@@ -1084,6 +1088,11 @@ ul, ol {
         right: auto;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
+    }
+
+    .intro--blog,
+    .intro--text {
+        height: 250px;
     }
 
     /* Section */
@@ -1128,6 +1137,14 @@ ul, ol {
         background-size: 330px auto;
         background-position: left -30px bottom -30px,
         right -30px bottom -30px;
+    }
+
+    .main__col--left {
+        width: 55%;
+    }
+
+    .main__col--right {
+        width: 45%;
     }
 }
 
@@ -1217,6 +1234,7 @@ ul, ol {
         max-width: none;
     }
 
+
     /* Team */
     .team {
         flex-direction: column;
@@ -1267,6 +1285,25 @@ ul, ol {
         background-size: 250px auto;
         background-position: left -20px bottom -30px,
         right -20px bottom -30px;
+    }
+
+    /* Main */
+    .main {
+        flex-direction: column;
+    }
+
+    .main__col {
+        width: 100%;
+    }
+
+    /* Request form */
+    .request-form--right {
+        display: none;
+    }
+
+    /* Articles */
+    .articles--column {
+        margin-bottom: 30px;
     }
 }
 
@@ -1341,6 +1378,8 @@ ul, ol {
         margin: 0 auto;
     }
 
+
+
     /* Mission */
     .mission-title {
         font-size: 40px;
@@ -1364,9 +1403,13 @@ ul, ol {
         background-position: left -120px bottom -80px,
         right -120px bottom -80px;
     }
+
+    /* Modal */
+    .modal__close {
+        right: 0;
+        top: -30px;
+    }
 }
-
-
 
 
 @media (max-width: 320px) {
@@ -1378,6 +1421,7 @@ ul, ol {
         font-size: 50px;
     }
 }
+
 
 /*
 font-family: 'Lato', sans-serif;
