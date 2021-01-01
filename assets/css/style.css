@@ -753,9 +753,8 @@ ul, ol {
 
 /* Articles */
 .articles {
-    margin-bottom: 30px;
+    margin: 0 15px 30px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -771,6 +770,7 @@ ul, ol {
 
 .articles__item {
     margin-bottom: 20px;
+    padding: 0 15px;
     width: 100%;
     max-width: 500px;
 }
@@ -1067,6 +1067,19 @@ ul, ol {
 
 /* Media Queries */
 @media (max-width: 991px) {
+    /* Intro */
+    .intro__title {
+        font-size: 90px;
+    }
+
+    .intro__title-amp {
+        font-size: 120px;
+
+        right: auto;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+    }
+
     /* Section */
     .section__title {
         text-align: center;
@@ -1075,7 +1088,6 @@ ul, ol {
     .section--map {
         background-position: center top 130px;
     }
-
 
     /* Services */
     .services__item {
@@ -1099,30 +1111,37 @@ ul, ol {
 
     .clients__list {
         justify-content: center;
-}
+    }
 
     .clients__list li {
-        min-width: 130px;
+        max-width: 130px;
     }
-    
 
+    /* Footer */
+    .footer {
+        background-size: 330px auto;
+        background-position: left -30px bottom -30px,
+        right -30px bottom -30px;
+    }
 }
 
 
 @media (max-width: 767px) {
-
+    /* Header */
     .header__inner {
         height: 50px;
     }
 
+    /* Nav */
     .nav {
         display: none;
         width: 100%;
         height: auto;
         min-height: calc(100vh - 50px);
         flex-direction: column;
-        background-color: rgba(0, 0, 0, .85);
         padding-top: 9px;
+
+        background-color: rgba(0, 0, 0, .85);
 
         position: absolute;
         top: 100%;
@@ -1141,7 +1160,7 @@ ul, ol {
         display: block;
     }
 
-    /* Intro 767px */
+    /* Intro */
     .intro {
         margin-bottom: 0;
     }
@@ -1158,27 +1177,25 @@ ul, ol {
         order: 1;
         width: 100%;
         margin-bottom: 25px;
+
         text-align: center;
     }
 
     .intro__title {
-        font-size: 90px;
+        font-size: 70px;
     }
 
     .intro__title-amp {
-        font-size: 120px;
-        right: auto;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
+        font-size: 100px;
     }
 
-    /* Request form 767px */
+    /* Request form */
     .request-form--intro {
         order: 2;
         position: static;
     }
 
-    /* Benefits 767px */
+    /* Benefits */
     .benefits {
         flex-direction: column;
         max-width: 600px;
@@ -1194,11 +1211,11 @@ ul, ol {
         max-width: none;
     }
 
-    /* Team 767px */
+    /* Team */
     .team {
         flex-direction: column;
     }
-    
+
     .team__col {
         width: 100%;
     }
@@ -1211,7 +1228,42 @@ ul, ol {
         max-width: 370px;
         margin: 0 auto;
     }
+
+    /* Mission */
+    .mission-title {
+        font-size: 70px;
+    }
+
+    .mission {
+        padding: 40px 20px;
+        margin-top: -16px;
+    }
+
+    .mission__title {
+        font-size: 24px;
+    }
+
+    .mission__subtitle {
+        font-size: 18px;
+    }
+
+    /* Articles */
+    .articles {
+       flex-wrap: wrap;
+    }
+
+    .articles__item {
+        max-width: none;
+    }
+
+    /* Footer */
+    .footer {
+        background-size: 250px auto;
+        background-position: left -20px bottom -30px,
+        right -20px bottom -30px;
+    }
 }
+
 
 
 @media (max-width: 575px) {
@@ -1224,8 +1276,20 @@ ul, ol {
     }
 
     /* Services */
+    .services {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
     .services__main-title {
+        width: 100%;
+
         font-size: 60px;
+        text-align: center;
+
+        bottom: auto;
+        right: auto;
+        top: 10px;
     }
 
     .services__item {
@@ -1237,25 +1301,75 @@ ul, ol {
         padding: 30px 0;
     }
 
+    .section--last {
+        margin-bottom: 30px;
+    }
+
     .section__title {
         font-size: 35px;
     }
 
+    /* Request form */
+    .request-form__header,
+    .request-form__content {
+        padding: 20px;
+    }
+
+    .request-form__title {
+        font-size: 25px;
+    }
+
     /* Clients */
     .clients__list {
-        justify-content: center;
         margin: 0 -15px;
     }
 
     .clients__list li {
-        min-width: none;
-        width: 33%;
+        max-width: none;
+        width: 33.33333%;
         margin-right: 0;
         padding: 0 15px;
     }
 
     .clients__list-logo {
         margin: 0 auto;
+    }
+
+    /* Mission */
+    .mission-title {
+        font-size: 40px;
+    }
+
+    .mission {
+        padding: 30px 20px;
+        margin-top: -10px;
+    }
+
+    .mission__title {
+        font-size: 20px;
+    }
+
+    .mission__subtitle {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        background-position: left -120px bottom -80px,
+        right -120px bottom -80px;
+    }
+}
+
+
+
+
+@media (max-width: 320px) {
+    .intro__title {
+        font-size: 40px;
+    }
+
+    .intro__title-amp {
+        font-size: 50px;
     }
 }
 
