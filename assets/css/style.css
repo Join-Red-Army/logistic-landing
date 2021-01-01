@@ -1141,7 +1141,7 @@ ul, ol {
         display: block;
     }
 
-    /* Intro */
+    /* Intro 767px */
     .intro {
         margin-bottom: 0;
     }
@@ -1172,19 +1172,44 @@ ul, ol {
         transform: translate3d(-50%, -50%, 0);
     }
 
-    /* Request form */
+    /* Request form 767px */
     .request-form--intro {
         order: 2;
         position: static;
     }
 
-    /* Benefits */
+    /* Benefits 767px */
     .benefits {
         flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
     }
 
     .benefits__col {
         width: 100%;
+    }
+
+    .benefits-list {
+        margin-bottom: 30px;
+        max-width: none;
+    }
+
+    /* Team 767px */
+    .team {
+        flex-direction: column;
+    }
+    
+    .team__col {
+        width: 100%;
+    }
+
+    .team__col:last-child {
+        margin-bottom: 0;
+    }
+
+    .team__item {
+        max-width: 370px;
+        margin: 0 auto;
     }
 }
 
