@@ -213,7 +213,7 @@
                 </div>
             </div> <!-- /Clients -->
 
-            <button class="btn btn--orange btn--shadow" type="button"><span>Become a client</span></button>
+            <button class="btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal"><span>Become a client</span></button>
 
             <span class="clients-love">we love our clients</span>
 
@@ -350,7 +350,7 @@
             </div>
 
             <div class="text-center">
-                <button class="btn btn--orange btn--shadow" type="button"><span>Become a client</span></button>
+                <button class="btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal"><span>Become a client</span></button>
             </div>
         </div>
     </section> <!-- /Mission -->
@@ -414,7 +414,7 @@
 
 
     <!-- Modals -->
-    <div class="modal" id="becomeClientModal" style="display: none;">
+    <div class="modal" id="becomeClientModal">
         <div class="modal__inner">
 
             <div class="modal__content">
@@ -444,7 +444,7 @@
 
                 </form>
 
-                <div class="modal__footer"></div>
+                <div class="modal__footer">
                     <h4 class="modal__footer-title">Our contacts</h4>
 
                     <address class="modal__contacts">
@@ -454,7 +454,10 @@
                     </address>
                 </div>
 
-                <button class="modal__close"><img src="./assets/images/close.svg" alt="Close"></button>
+                <button class="modal__close" type="button" data-modal-close>
+                    <img src="./assets/images/close.svg" alt="Close">
+                </button>
+                
             </div>
         </div>
     </div>
