@@ -577,16 +577,77 @@ ul, ol {
     position: relative;
 }
 
-.reviews::before {
+.reviews::before,
+.reviews::after {
     content: "";
     display: block;
-    width: 92px;
-    height: 126px;
-    background: url("../images/lines.svg") no-repeat left;
+    width: 10px;
+    height: 100%;
     position: absolute;
-    top: -15px;
-    left: 2px;
-    z-index: 1;
+    top: 0;
+    z-index: 3;
+}
+
+.reviews::before {
+    left: 0;
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+}
+
+.reviews::after {
+    right: 0;
+    background-image: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
+}
+
+.reviews .slick-list {
+    padding-top: 20px;
+    z-index: 2;
+}
+
+.reviews .slick-dots {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    z-index: 3;
+}
+
+.reviews .slick-dots li {
+    margin: 0 8px;
+}
+
+.reviews .slick-dots li.slick-active button {
+    background-color: #004AF2;
+    border-color: rgba(0, 74, 242, .11);
+    /* box-shadow: 0 0 0 5px rgba(0, 74, 242, .11); */
+}
+
+.reviews .slick-dots button {
+    box-sizing: content-box;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    
+    border: 5px solid transparent;
+    border-radius: 50%;
+    background-color: #DBDBDB;
+    background-clip: content-box;
+    cursor: pointer;
+
+    color: transparent;
+    font-size: 0;
+
+    transition: background-color .2s linear, border-color .2s linear;
+}
+
+.reviews .slick-dots button:focus {
+    outline: none;
+}
+
+.reviews__item {
+    padding: 0 10px;
 }
 
 .reviews__header {
@@ -595,6 +656,18 @@ ul, ol {
     margin-bottom: 30px;
     position: relative;
     z-index: 2;
+}
+
+.reviews__header::before {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 126px;
+    background: url("../images/lines.svg") no-repeat left;
+    position: absolute;
+    top: -13px;
+    left: 2px;
+    z-index: 1;
 }
 
 .reviews__header-content {
@@ -606,9 +679,11 @@ ul, ol {
 .reviews__photo {
     width: 100px;
     height: 100px;
+    position: relative;
+    z-index: 2;
     border-radius: 50%;
     border: 5px solid #fff;
-    box-shadow: 0, 3, 6, rgba(0, 0, 0, .16);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
 
 .reviews__name {

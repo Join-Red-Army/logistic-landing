@@ -108,7 +108,7 @@ $(function() {
 
 
 
-    // Slider Slick https://kenwheeler.github.io/slick/
+    // Slider for Intro (Slick https://kenwheeler.github.io/slick/)
     let introSlider = $("#introSlider");
 
      introSlider.slick({
@@ -130,4 +130,17 @@ $(function() {
         introSlider.slick("slickNext");
      })
 
+
+
+    // Slider for Reviews (Slick https://kenwheeler.github.io/slick/)
+    let reviewsSlider = $("#reviewsSlider");
+
+    reviewsSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        speed: 500,
+     })
 });
